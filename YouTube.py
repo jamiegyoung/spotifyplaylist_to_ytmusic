@@ -64,6 +64,9 @@ class YTMusicTransfer:
         songs = list(tracks)
         notFound = list()
         for i, song in enumerate(songs):
+            # skip songs with a duration of 0
+            if (song['duration'] == 0.0):
+                continue
             name = re.sub(r' \(feat.*\..+\)', '', song['name'])
             query = song['artist'] + ' ' + name
             query = query.replace(" &", "")
