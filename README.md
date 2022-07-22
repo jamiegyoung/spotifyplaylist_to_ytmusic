@@ -1,3 +1,6 @@
+# Fork Changes
+This is a fork of [`sigma67's master branch`](https://github.com/sigma67/spotifyplaylist_to_ytmusic) that fixes a bug and has some changes based on my preferences.
+
 # Transfer a Spotify Playlist to YouTube Music
 
 A simple command line script to clone a Spotify playlist to YouTube Music.

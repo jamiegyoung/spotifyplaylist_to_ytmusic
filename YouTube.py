@@ -62,6 +62,8 @@ class YTMusicTransfer:
     def search_songs(self, tracks):
         videoIds = []
         songs = list(tracks)
+        # Reverse the list so the newest songs are first
+        songs.reverse()
         notFound = list()
         for i, song in enumerate(songs):
             # skip songs with a duration of 0
